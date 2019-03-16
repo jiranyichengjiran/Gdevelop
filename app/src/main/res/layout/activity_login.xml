@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dl"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_130"
+        android:drawableLeft="@mipmap/log_icon_phone_default_xxhdpi"
+        android:hint="手机号"
+        android:textColor="@drawable/color_seletor"
+        android:textColorHint="#eeeeee"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:drawableLeft="@mipmap/log_icon_lock_default_xxhdpi"
+        android:drawableRight="@mipmap/log_icon_eye_default_xxhdpi"
+        android:hint="登录密码"
+        android:textColor="@drawable/color_seletor"
+        android:textColorHint="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chec_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:text="记住密码"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_14" />
+
+        <CheckBox
+            android:id="@+id/chec_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chec_pwd"
+            android:text="自动登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/text_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_65"
+            android:text="快速注册"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_14"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_dl"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_130"
+        android:background="@drawable/shape_ufo_dl"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:gravity="center_horizontal"
+        android:text="-------------------第三方账号快速登录-------------------"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_16"
+        android:src="@mipmap/log_icon_weixin_default_xxhdpi" />
+
+</LinearLayout>
